@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+//import components
+import Keypad from './src/components/Keypad';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Keypad />
       <StatusBar style="auto" />
     </View>
   );
@@ -12,6 +15,12 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: '#FFA0A0',
+    paddingTop: 40,
+    padding: 30,
+  },
+  button: {
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
